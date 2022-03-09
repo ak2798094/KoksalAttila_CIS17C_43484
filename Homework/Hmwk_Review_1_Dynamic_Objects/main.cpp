@@ -160,7 +160,7 @@ int main(int argc, char** argv) {
    Triangle tri(rows);
    
    //Print the Triangular Table
-   cout<<"The trangular table size is [row,row] = ["<<rows<<","<<rows<<"]";
+   cout<<"The triangular table size is [row,row] = ["<<rows<<","<<rows<<"]";
    prntTri(&tri);
 
    //Exit Stage Right

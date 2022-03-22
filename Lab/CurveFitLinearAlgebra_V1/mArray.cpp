@@ -1,23 +1,3 @@
-//Dr. Mark E. Lehr
-//March 5th, 2020
-//Quick and Dirty Dynamic Array Class
-//Built for speed not error checking
-//Know what you are doing or die using it
-//The speed mentioned above was not
-//speed of execution but speed to code.
-
-//This is the implementation for the
-//Mark Array
-
-//Things to do
-//  1)  Read in the input file
-//           time  current
-//  2)  Add in reading the transformation matrix
-//  3)  Add in reading start and stop times
-//  4)  Output the information as expected
-//  5)  Also send to the ftp file
-
-
 #include "mArray.h"
 #include <fstream>
 #include <cmath>

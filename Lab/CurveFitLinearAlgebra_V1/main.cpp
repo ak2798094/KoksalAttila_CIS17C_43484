@@ -1,8 +1,3 @@
-/*Dr. Mark E. Lehr
-  March 5th, 2020
-  Purpose:  Curve fit of Data Structure empirical timing and/or
-            operational analysis
-*/
 #include<iostream>
 #include<iomanip>
 using namespace std;

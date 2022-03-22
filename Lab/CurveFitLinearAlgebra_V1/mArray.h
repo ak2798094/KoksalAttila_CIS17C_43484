@@ -1,13 +1,3 @@
-//Dr. Mark E. Lehr
-//March 5th, 2020
-//Quick and Dirty Dynamic Array Class
-//Built for speed not error checking
-//Know what you are doing or die using it
-//The speed mentioned above was not
-//speed of execution but speed to code.
-
-//This is the specification for the
-//Mark Array
 #ifndef MARRAY_H
 #define MARRAY_H
 

@@ -1,5 +1,5 @@
 /* 
- * Author: Willy Quezada
+ * Author: Attila Koksal
  * Purpose:  Abstraction, Operator Overloading, 
  *           Copy Construction and Polymorphism
  */

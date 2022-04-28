@@ -36,7 +36,6 @@ int main(int argc, char** argv) {
             n++;
         }
         m++;
-        
     }
     return 0;
 }

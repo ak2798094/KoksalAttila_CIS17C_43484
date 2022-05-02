@@ -9,7 +9,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <new>  // Needed for bad_alloc exception
+#include <new>
 using namespace std;
 
     

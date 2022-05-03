@@ -14,6 +14,8 @@
 #include <valarray>
 ///CMath Library
 #include <cmath>
+#include <iterator>
+#include <map>
 using namespace std;
 ///number of rows in the chess board
 const int ROW=8; 

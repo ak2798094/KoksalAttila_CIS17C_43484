@@ -285,6 +285,25 @@ public:
 
 //main function
 int main(int argc, char** argv) {
+    
+    map<string,string> pieceMove;
+    
+    pieceMove.insert(pair<string, string>("Pawn", "Can move once forward on captures or moves"));
+    pieceMove.insert(pair<string, string>("Rook", "Can move horizontally or vertically any number of spaces but can't jump over pieces"));
+    pieceMove.insert(pair<string, string>("Knight", "Moves in an L shape with a limit of two spaces and then one space but in any direction"));
+    pieceMove.insert(pair<string, string>("Bishop", "Can move diagonally only for any number of spaces but can't jump over pieces"));
+    pieceMove.insert(pair<string, string>("Queen", "Can move diagonally, horizontally, or vertically for any number of spaces but can't jump over pieces"));
+    pieceMove.insert(pair<string, string>("King", "Can move one space any direction so long as that one space is not being attacked by an enemy piece"));
+    
+    map<string,string>::iterator itr;
+    cout<<"Here is some useful information about what each piece in chess can do and cannot."<<endl;
+    cout<<"\tPiece\tMovement"<<endl;
+    
+    for (itr = pieceMove.begin(); itr != pieceMove.end(); ++itr) {
+        cout<<'\t'<<itr->first<<'\t'<<itr->second<<endl;
+    }
+    cout<<endl;
+    
     //creates a board from the Board class
     Board board;
     //initializes the board

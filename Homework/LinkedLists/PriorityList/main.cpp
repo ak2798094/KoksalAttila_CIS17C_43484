@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Attila Koksal
- *
+ * Purpose: Priority Linked List
  * Created on May 3, 2022, 4:50 PM
  */
 

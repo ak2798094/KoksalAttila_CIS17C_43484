@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Attila Koksal
- * Purpose: Priority Linked List
- * Created on May 3, 2022, 4:50 PM
+ * Purpose: Sorted Linked List
+ * Created on May 4, 2022, 5:30 PM
  */
 
 #include <cstdlib>
@@ -141,7 +141,6 @@ public:
             begin->prev = temp;
         }
         begin = temp;
-        this->Sort();
     }
     
     
@@ -161,10 +160,9 @@ public:
             end->next = temp;
         }
         end = temp;
-        this->Sort();
     }
     
-    void Sort()
+     void Sort()
     {
         Node *i = begin, *j = NULL;
         int val;
@@ -174,7 +172,7 @@ public:
             j = i->next;
             while(j != NULL)
             {
-                if(i->data < j->data)
+                if(i->data > j->data)
                 {
                     val = i->data;
                     i->data = j->data;
@@ -190,8 +188,8 @@ public:
 
 int main(int argc, char** argv) 
 {
-    //In this example, the list automatically places the highest element at the front
-    // no matter the order in which they were placed so we don't need to sort.
+    //Notice how in this list, the elements are displayed in the order they are made and we require
+    // a sort in order to adjust them.
     LinkedList list;
     list.pushBack(5);
     list.pushBack(6);
@@ -199,16 +197,25 @@ int main(int argc, char** argv)
     list.pushBack(2);
     list.pushFront(1);
     list.forwardDisplay();
-    list.pop_back();
+    
     list.pop_back();
     list.forwardDisplay();
-    list.pushBack(20);
+    
+    list.pushBack(10);
     list.pushFront(-2);
+    list.forwardDisplay();
+    cout << "\n Now sorting the list: ";
+    list.Sort();
+    
+    list.forwardDisplay();
+     
     list.pop_front();
     list.forwardDisplay();
     list.backwardsDisplay();
-    
     list.destroy();
+    list.forwardDisplay();
+    list.pop_back();
+    list.pop_back();
 
     return 0;
 }

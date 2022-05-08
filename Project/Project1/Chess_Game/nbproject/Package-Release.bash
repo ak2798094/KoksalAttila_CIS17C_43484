@@ -7,14 +7,14 @@
 # Macros
 TOP=`pwd`
 CND_PLATFORM=Cygwin-Windows
-CND_CONF=Debug
+CND_CONF=Release
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/chessgame
-OUTPUT_BASENAME=chessgame
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/chess_game
+OUTPUT_BASENAME=chess_game
 PACKAGE_TOP_DIR=chessgame/
 
 # Functions

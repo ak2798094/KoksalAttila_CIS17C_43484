@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.cnd.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>ChessGame</name>
+            <name>Chess_Game</name>
             <c-extensions>cpp</c-extensions>
             <cpp-extensions/>
             <header-extensions/>

@@ -3,6 +3,7 @@
  * @author: Attila Koksal
  * @date: Created on April 6, 2022, 7:30 PM
  * Purpose:  CPP Template 
+ * Chess Version 2
  */
 
 ///System Libraries

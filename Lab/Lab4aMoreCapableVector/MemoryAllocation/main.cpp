@@ -11,7 +11,6 @@
 #include <ctime>
 #include <new>  // Needed for bad_alloc exception
 using namespace std;
-
     
 template <class T>
 class SimpleVector

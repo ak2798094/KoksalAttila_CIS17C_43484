@@ -29,10 +29,9 @@ int main(int argc, char** argv) {
     //Create a Simple Vector using Linked Lists
     SimpleVector<Object> svp(b);
        
-      for(int i=0;i<SIZE-1;i++){
+    for(int i=0;i<SIZE-1;i++){
        svp.push(b);
        cout << endl;
-       
     }
     
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();

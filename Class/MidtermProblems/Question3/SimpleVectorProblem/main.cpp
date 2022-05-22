@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     svp.push(b);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
     
-     cout << "Time it took for SimpleVector Push with Object of size " << SIZE << " in microseconds: " << std::chrono::duration_cast<std::chrono::microseconds>(end-begin).count() << "ms" << endl << endl;
+    cout << "Time it took for SimpleVector Push with Object of size " << SIZE << " in microseconds: " << std::chrono::duration_cast<std::chrono::microseconds>(end-begin).count() << "ms" << endl << endl;
   
     //Exit
     return 0;

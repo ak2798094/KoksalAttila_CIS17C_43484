@@ -1,11 +1,8 @@
-
 /* 
  * File:   main.cpp
  * Author: Attila Koksal
- *
  * Created on May 15, 2022, 10:30 PM
  */
-
 
 #include <iostream>
 #include <cstdlib>
@@ -46,7 +43,7 @@ int main(int argc, char** argv) {
     //Selection sort Timing and Operational Analysis
     
     std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
-     selSort(array,SIZE);
+    selSort(array,SIZE);
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
     
     cout << "Time it took for Selection Sort with array of size " << SIZE << " in seconds: " << std::chrono::duration_cast<std::chrono::microseconds>(end-begin).count() << "ms" << endl << endl;

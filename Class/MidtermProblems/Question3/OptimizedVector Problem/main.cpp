@@ -4,7 +4,6 @@
  * Created on May 16, 2022, 8:58 AM
  */
 
-
 //System Libraries
 #include <iostream>
 #include <cstdlib>
@@ -32,12 +31,11 @@ int main(int argc, char** argv) {
     //Test an object by populating the simple vector and print
     SimpleVector<Object> svp(SIZE);
  
-    for(int i = 0; i < 100; i++)
-    {
-    cout << "Arraysize is: " << svp.size() << endl;
-    svp.push(b);
-    cout << endl;
-    cout << "Total Operations for Optimized Vector: " << opindex+opeq+opinc+oplt+opstar+opequals+oplus << endl;
+    for(int i = 0; i < 100; i++){
+        cout << "Arraysize is: " << svp.size() << endl;
+        svp.push(b);
+        cout << endl;
+        cout << "Total Operations for Optimized Vector: " << opindex+opeq+opinc+oplt+opstar+opequals+oplus << endl;
     }
     
     //Exit

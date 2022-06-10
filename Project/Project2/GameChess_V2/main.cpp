@@ -287,6 +287,15 @@ public:
 //main function
 int main(int argc, char** argv) {
     
+    int colANDrow[]={8,5,3,6,2,7,1,4};
+    int size = sizeof(colANDrow)/sizeof(colANDrow[0]);
+    
+    bubbleSort(colANDrow,size);
+    cout<<"The game of chess has 8 rows and 8 columns, which totals to 64 squares of space!";
+    for(int i=0;i<size;i++){
+        cout<<colANDrow[i]<<" ";
+    }
+    
     map<string,string> pieceMove;
     
     pieceMove.insert(pair<string, string>("Pawn", "Can move once forward on captures or moves"));
@@ -1029,4 +1038,14 @@ void Board::displayWinningStatus(){
     int scoreDifference=abs(playerScores[0]-playerScores[1]);
     cout<<"Current winning player is "<<playerNames[winningPlayerNumber]<<endl;
     cout<<"Score difference is "<<scoreDifference<<" points (based on number of pieces still on the board)"<<endl;
+}
+void bubbleSort(int arr[],int number){
+    if (number == 1)
+        return;
+ 
+    for (int i=0;i<number-1;i++)
+        if (arr[i]>arr[i+1])
+            swap(arr[i], arr[i+1]);
+ 
+    bubbleSort(arr,number-1);
 }

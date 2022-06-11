@@ -283,7 +283,7 @@ public:
         }
     }
 };
-
+void bubbleSort(int [],int);
 //main function
 int main(int argc, char** argv) {
     
@@ -291,10 +291,11 @@ int main(int argc, char** argv) {
     int size = sizeof(colANDrow)/sizeof(colANDrow[0]);
     
     bubbleSort(colANDrow,size);
-    cout<<"The game of chess has 8 rows and 8 columns, which totals to 64 squares of space!";
+    cout<<"The game of chess has 8 rows and 8 columns, which totals to 64 squares of space! EX: ";
     for(int i=0;i<size;i++){
         cout<<colANDrow[i]<<" ";
     }
+    cout<<endl;
     
     map<string,string> pieceMove;
     

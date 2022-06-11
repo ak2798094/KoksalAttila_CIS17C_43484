@@ -288,7 +288,7 @@ void bubbleSort(int [],int);
 int main(int argc, char** argv) {
     
     int colANDrow[]={8,5,3,6,2,7,1,4};
-    int size = sizeof(colANDrow)/sizeof(colANDrow[0]);
+    int size=sizeof(colANDrow)/sizeof(colANDrow[0]);
     
     bubbleSort(colANDrow,size);
     cout<<"The game of chess has 8 rows and 8 columns, which totals to 64 squares of space! EX: ";

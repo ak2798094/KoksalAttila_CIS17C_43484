@@ -66,17 +66,16 @@ void p1() {
     file << "collision array\n";
     for ( int i = 0; i < size; i++ ) {
         if ( stats.count( bitvec[i] ) <= 0 ) {
-            stats[ bitvec[i] ] = 1;
+            stats[bitvec[i]] = 1;
         } else {
         stats[ bitvec[i] ]++;
         }
-    file << setw( 2 ) << bitvec[i] << " ";
-    if ( ( i + 1 ) % 25 == 0 ) {
-        file << endl;
+        file << setw( 2 ) << bitvec[i] << " ";
+        if ( ( i + 1 ) % 25 == 0 ) {
+            file << endl;
+        }
     }
-
-}
-int total = 0;
+    int total = 0;
     for ( map<int, int>::iterator it = stats.begin( ); it != stats.end( ); it++ ) {
         if ( it->first != 0 ) {
             total += it->second;

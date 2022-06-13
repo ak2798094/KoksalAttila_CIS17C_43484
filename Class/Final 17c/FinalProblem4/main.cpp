@@ -25,7 +25,6 @@ int main(int argc, char** argv) {
     return 0;
 }
 
-//sorting method
 void sorting() {
     int size = 100000;
     short *master = fill( size );

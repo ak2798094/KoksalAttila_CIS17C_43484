@@ -105,8 +105,6 @@ void p3( ) {
     cout << "The average wait is " << ( wait / 60.0f ) / totalCust<< " minutes." << endl;
 }
 
-
-
 int main() {
     srand( time( 0 ) );
     p3();
